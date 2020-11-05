@@ -8,309 +8,215 @@ $largeDesktop: 1440px;
 
 //fonts
 
-$lust: lust, serif;
-
+$kari: kari-display-pro, sans-serif;
+$urw: urw-form, sans-serif;
+$oskar: oskar, sans-serif;
+  
 
 //colors
 
-$red: #8b1a26;
-$redBright: #c22033;
-$gold: #b7963c;
-$goldText: #f5e2a9;
+$red: #c30c30;
+$redDark: #550313;
+$redLight: #edc9cf;
+$blue: #638aa8;
+$grey: #eeeeee;
 
 *,
 *::before,
 *::after {
-    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
+    background-image: url('../images/horse-background-mobile.png');
+    font-family: $urw;
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    @media (min-width: $smallDesktop) {
+        background-image: url('../images/horse-background-desktop.png');
+        max-width: 740px;
+        margin: 0 auto;
+    }
 }
 
 .container {
-    background-image: url('../images/paper-seamless.jpg');
-    padding-bottom: 120px;
-    position: relative;
+    margin: 0 15px;
+    padding: 0 20px;
+    background: white;
+    opacity: .9;
+    box-shadow: 2px 0px 14px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 0px 14px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 0px 14px 1px rgba(0,0,0,0.75); 
 
     @media (min-width: $smallDesktop) {
-        padding-bottom: 0;
-    }
-}
-
-.header__container {
-
-    @media (min-width: $tablet) {
         position: relative;
-        margin: 0 auto;
-    }
-
-    @media (min-width: $smallDesktop) {
-        width: 100%;
-        max-width: 1300px;
     }
 
     &:before {
-        content: '';
-        background-image: url('../images/rose-left-mobile.png');
-        background-size: 28%;
-        background-repeat: no-repeat;
-        background-position: top left;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 30px;
-        left: 0;
-
-        @media (min-width: $tablet) {
-            background-image: url('../images/rose-top-left-desktop.png');
-            background-size: 50%;
-        }
-
-        @media (min-width: $largeDesktop) {
-            left: -70px;
+        @media (min-width: $smallDesktop) {
+            content: '';
+            background: $redLight;
+            width: 2px;
+            height: 75%;
+            position: absolute;
+            left: 196px;
         }
     }
-
-    &:after {
-        content: '';
-        background-image: url('../images/rose-right-mobile.png');
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position: top right;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        @media (min-width: $tablet) {
-            background-image: url('../images/rose-top-right-desktop.png');
-        }
-
-        @media (min-width: $largeDesktop) {
-            background-size: 60%;
-            right: -20px;
-        }
-    }
-}
-
-.header {
-    border: 8px solid $redBright;
-    border-radius: 100%;
-    margin: -15px auto 40px;
-    position: relative;
-    z-index: 1;
-    width: 95vw;
-    height: 95vw;
-    max-width: 380px;
-    max-height: 380px;
-
-    @media (min-width: $tablet) {
-        width: 70vw;
-        height: 70vw;
-        max-width: 525px;
-        max-height: 525px;
-    }
-
-    @media (min-width: $smallDesktop) {
-        margin: -15px auto 80px;
-        max-width: 600px;
-        max-height: 600px;
-    }
-}
-
-.header__inner {
-    background-color: $redBright;
-    color: white;
-    text-align: center;
-    border-radius: 100%;
-    border: 3px solid white;
-    width: 100%;
-    height: 100%;
-    position: relative;
 }
 
 .header__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-}
-
-.header__icon {
-    width: 25px;
-    padding-top: 10px;
-
-    @media (min-width: $tablet) {
-        width: 50px;
-        padding-top: 15px;
+    @media (min-width: $smallDesktop) {
+        width: 51%;
+        float: left;
+        margin-left: 20px;
     }
 }
 
-.header__pre {
-    font-size: 12px;
+.header--small {
+    font-size: 24px;
     text-transform: uppercase;
-    max-width: 175px;
-    margin: 0 auto;
-
-    @media (min-width: $mobile) {
-        font-size: 13px;
-        max-width: 200px;
-    }
-
-    @media (min-width: $tablet) {
-        font-size: 20px;
-        max-width: 310px;
-        margin-top: 30px;
-    }
+    line-height: 1.1;
+    color: $redDark;
 
     @media (min-width: $smallDesktop) {
-        font-size: 25px;
-        max-width: 365px;
+        padding-top: 40px;
     }
 }
+  
 
-.header__sup {
-    vertical-align: top;
-}
-
-.header__title {
-    font-family: $lust;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 82px;
-    margin: 15px 0;
-    line-height: .8;
-    letter-spacing: -4px;
-
-    @media (min-width: $mobile) {
-        font-size: 98px;
-    }
-
-    @media (min-width: $tablet) {
-        font-size: 140px;
-        margin: 15px 0 35px;
-    }
-
-    @media (min-width: $smallDesktop) {
-        font-size: 160px;
-    }
+.header--large {
+    color: $red;
+    font-size: 88px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
 }
 
 .header__date {
-    color: $goldText;
-    font-family: $lust;
+    font-family: $kari !important;
+    background-color: $red;
+    color: white;
+    width: 50%;
+    margin: 0 auto 40px;
+    line-height: .7;
+    font-size: 5.5em;
+    padding: 15px;
+    max-width: 180px;
+
+    @media (min-width: $smallDesktop) {
+        margin: 0 20px 0 -20px;
+        float: left;
+    }
+
+
+    div:nth-of-type(2) {
+        text-align: right;
+    }
+}
+
+.main {
+    @media (min-width: $smallDesktop) {
+        display: flex;
+        clear: left;
+    }
+}
+
+.info {
+    border-top: 2px solid $redLight;
+    border-bottom: 2px solid $redLight;
+
+    @media (min-width: $smallDesktop) {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+}
+
+.info__top {
+    display: flex;
+    justify-content: space-evenly;
     font-size: 22px;
-    padding-top: 20px;
-    text-transform: uppercase;
-    -webkit-font-smoothing: auto;
-    letter-spacing: 1px;
-
-    @media (min-width: $mobile) {
-        font-size: 26px;
-    }
-
-    @media (min-width: $tablet) {
-        font-size: 35px;
-    }
+    font-weight: bold;
 
     @media (min-width: $smallDesktop) {
-        font-size: 40px;
+        flex-direction: column;
     }
 }
 
-.subheader {
-    color: $redBright;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: .5px;
-    margin: 0 auto 35px;
-    max-width: 340px;
+.info__date {
+    flex: 1;
+    border-right: 2px solid $redLight;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
 
-    @media (min-width: $tablet) {
-        max-width: none;
+    @media (min-width: $smallDesktop) {
+        flex: 0;
+        border-right: none;
     }
 }
 
-.subheader__time {
-    font-size: 20px;
-    line-height: 1.7;
+.info__date--small {
+    font-size: 12px;
+    color: $red;
+    text-transform: uppercase;      
+}
+
+.info__time {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
     @media (min-width: $smallDesktop) {
-        font-size: 25px;
+        flex: 0;
+        order: 3;
     }
 }
 
-.subheader__location {
-    font-size: 30px;
+.info__location {
+    font-size: 22px;
+    border-top: 2px solid $redLight;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;      
 
     @media (min-width: $smallDesktop) {
-        font-size: 40px;
+        border-bottom: 2px solid $redLight;
+        text-align: center;
     }
+}
+
+.info__location--small {
+    font-size: 10px;
+}
+
+.info__flag {
+    background: $blue;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;      
 }
 
 .text__container {
-    
-    @media (min-width: $smallDesktop) {
-        width: 100%;
-        position: relative;
-        margin: 0 auto;
-    }
-
-    @media (min-width: $largeDesktop) {
-        width: 100%;
-        max-width: 1550px;
-    }
-
-    &:after {
-        content: '';
-        background-image: url('../images/rose-bottom-mobile.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: bottom left;
-        width: 100%;
-        height: 100%;
-        max-width: 400px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        @media (min-width: $smallDesktop) {
-            background-image: url('../images/rose-bottom-desktop.png');
-            background-size: 50%;
-            background-position: top right;
-            top: 55%;
-            max-width: 475px;
-        }
-
-        @media (min-width: $desktop) {
-            top: 41%;
-            max-width: 700px;
-        }
-
-        @media (min-width: $largeDesktop) {
-            top: 15%;
-            max-width: 800px;
-        }
-
-        @media (min-width: 1600px) {
-            top: 5%;
-            max-width: 900px;
-        }
-    }
+    margin-left: 20px;
 }
 
 
 .text {
     font-size: 16px;
-    margin: 0 50px;
     max-width: 600px;
     letter-spacing: .5px;
     line-height: 1.5;
@@ -333,11 +239,33 @@ body {
     font-weight: bold;
 }
 
-.charity {
-    padding: 40px 0;
-    background-color: $red;
-    color: white;
+.charity__header {
+    font-family: $oskar;
+    font-size: 18px;
+    background: $grey;
+    color: $red;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0;
+    margin: 0 -20px;
+    letter-spacing: 1px;
     position: relative;
+
+    &:after {
+        content: '';
+        width: 80px;
+        height: 5px;
+        background: $red;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+.charity {
+    padding: 0 35px;
     text-align: center;    
 }
 
