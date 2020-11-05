@@ -63,9 +63,9 @@ body {
             content: '';
             background: $redLight;
             width: 2px;
-            height: 75%;
+            height: 85%;
             position: absolute;
-            left: 196px;
+            left: 273px;
         }
     }
 }
@@ -86,9 +86,9 @@ body {
 
     @media (min-width: $smallDesktop) {
         padding-top: 40px;
+        
     }
 }
-  
 
 .header--large {
     color: $red;
@@ -112,6 +112,8 @@ body {
     @media (min-width: $smallDesktop) {
         margin: 0 20px 0 -20px;
         float: left;
+        font-size: 9em;
+        max-width: 250px;
     }
 
 
@@ -119,6 +121,7 @@ body {
         text-align: right;
     }
 }
+
 
 .main {
     @media (min-width: $smallDesktop) {
@@ -135,6 +138,8 @@ body {
         display: flex;
         flex-direction: column;
         border: none;
+        width: 420px;
+        line-height: 1;
     }
 }
 
@@ -161,14 +166,23 @@ body {
     @media (min-width: $smallDesktop) {
         flex: 0;
         border-right: none;
+        font-size: 35px;
+        align-items: baseline;
     }
-}
+} 
 
 .info__date--small {
     font-size: 12px;
     color: $red;
-    text-transform: uppercase;      
+    text-transform: uppercase;   
+    font-weight: bold;
+    
+    @media (min-width: $smallDesktop) {
+        font-size: 25px;
+    }
 }
+
+  
 
 .info__time {
     flex: 1;
@@ -179,6 +193,9 @@ body {
     @media (min-width: $smallDesktop) {
         flex: 0;
         order: 3;
+        font-size: 35px;
+        justify-content: flex-start;
+        padding: 15px 0;
     }
 }
 
@@ -192,14 +209,22 @@ body {
     padding: 15px 0;      
 
     @media (min-width: $smallDesktop) {
+        align-items: baseline;
         border-bottom: 2px solid $redLight;
-        text-align: center;
+        font-size: 35px;
     }
 }
+  
 
 .info__location--small {
     font-size: 10px;
+    @media (min-width: $smallDesktop) {
+        font-size: 18px;
+        margin-top: 15px;
+    }
 }
+
+  
 
 .info__flag {
     background: $blue;
@@ -208,6 +233,10 @@ body {
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;      
+
+    @media (min-width: $smallDesktop) {
+        margin-bottom: 10px;
+    }
 }
 
 .text__container {
