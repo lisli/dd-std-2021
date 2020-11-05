@@ -96,8 +96,12 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1;
-}
 
+    @media (min-width: $smallDesktop) {
+        font-size: 118px;
+    }
+}
+  
 .header__date {
     font-family: $kari !important;
     background-color: $red;
@@ -162,12 +166,15 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px 0;
+    width: 50%;
+    float: left;
 
     @media (min-width: $smallDesktop) {
         flex: 0;
         border-right: none;
         font-size: 35px;
         align-items: baseline;
+        width: 100%;
     }
 } 
 
@@ -189,6 +196,7 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
+    padding: 28px 0;
 
     @media (min-width: $smallDesktop) {
         flex: 0;
@@ -207,6 +215,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 15px 0;      
+    clear: both;
 
     @media (min-width: $smallDesktop) {
         align-items: baseline;
