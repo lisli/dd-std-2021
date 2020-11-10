@@ -253,7 +253,7 @@ body {
 
     @media (min-width: $smallDesktop) {
         margin-bottom: 10px;
-        font-size: 22px;
+        font-size: 16px;
     }
 }
 
@@ -303,9 +303,9 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
     top: 100%;
-    -webkit-box-shadow: 4px 3px 6px 0px rgba(50, 50, 50, 0.35);
-    -moz-box-shadow: 4px 3px 6px 0px rgba(50, 50, 50, 0.35);
-    box-shadow: 4px 3px 6px 0px rgba(50, 50, 50, 0.35); 
+    -webkit-box-shadow: 0px 12px 18px 0px rgba(50, 50, 50, 0.35), 0px 7px 14px 0px rgba(50, 50, 50, 0.35);
+    -moz-box-shadow: 0px 12px 18px 0px rgba(50, 50, 50, 0.35), 0px 7px 14px 0px rgba(50, 50, 50, 0.35);
+    box-shadow: 0px 12px 18px 0px rgba(50, 50, 50, 0.35), 0px 7px 14px 0px rgba(50, 50, 50, 0.35); 
 
     @media (min-width: $smallDesktop) {
         width: auto;
