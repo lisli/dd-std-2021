@@ -73,7 +73,8 @@ body {
   font-size: 88px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: .8; }
+  line-height: .8;
+  letter-spacing: -5px; }
   @media (min-width: 1024px) {
     .header--large {
       font-size: 118px; } }
@@ -220,14 +221,14 @@ body {
 
 .charity__header {
   font-family: oskar, sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   background: #eeeeee;
   color: #c30c30;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  letter-spacing: 1px;
-  width: 63%;
+  letter-spacing: 2px;
+  width: 77%;
   margin: 0;
   padding: 15px 30px;
   position: absolute;
