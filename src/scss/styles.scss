@@ -58,17 +58,12 @@ body {
 .container {
     margin: 0 30px;
     padding: 0 20px;
-    // background: white;
-    // opacity: .9;
     background: rgba(255, 255, 255, .9);
-    box-shadow: 2px 0px 14px 1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 2px 0px 14px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 0px 14px 1px rgba(0,0,0,0.75); 
-
-    // @media (min-width: $smallDesktop) {
-        position: relative;
-        margin: 0 15px;
-    // }
+    box-shadow: 2px 0px 14px 1px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 2px 0px 14px 1px rgba(0,0,0,0.35);
+    -moz-box-shadow: 2px 0px 14px 1px rgba(0,0,0,0.35); 
+    position: relative;
+    margin: 0 15px;
 
     &:before {
         @media (min-width: $smallDesktop) {
@@ -173,17 +168,6 @@ body {
     }
 }
 
-// .info__top {
-//     display: flex;
-//     justify-content: space-evenly;
-//     font-size: 22px;
-//     font-weight: bold;
-
-//     @media (min-width: $smallDesktop) {
-//         flex-direction: column;
-//     }
-// }
-
 .info__date {
     flex: 1;
     border-right: 2px solid $redLight;
@@ -214,8 +198,6 @@ body {
         font-size: 25px;
     }
 }
-
-  
 
 .info__time {
     flex: 1;
@@ -249,7 +231,6 @@ body {
         font-size: 35px;
     }
 }
-  
 
 .info__location--small {
     font-size: 14px;
@@ -259,8 +240,6 @@ body {
         max-width: 170px;
     }
 }
-
-  
 
 .info__flag {
     background: $blue;
@@ -281,7 +260,6 @@ body {
         margin-left: 20px;
     }
 }
-
 
 .text {
     font-size: 16px;
