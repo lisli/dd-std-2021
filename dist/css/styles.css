@@ -222,7 +222,7 @@ body {
 .charity__header {
   font-family: oskar, sans-serif;
   font-size: 22px;
-  background: #eeeeee;
+  background: #f9f6f6;
   color: #c30c30;
   text-transform: uppercase;
   text-align: center;
@@ -234,7 +234,10 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  top: 100%; }
+  top: 100%;
+  -webkit-box-shadow: 4px 3px 6px 0px rgba(50, 50, 50, 0.35);
+  -moz-box-shadow: 4px 3px 6px 0px rgba(50, 50, 50, 0.35);
+  box-shadow: 4px 3px 6px 0px rgba(50, 50, 50, 0.35); }
   @media (min-width: 1024px) {
     .charity__header {
       width: auto; } }
@@ -244,16 +247,17 @@ body {
     height: 5px;
     background: #c30c30;
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 50%;
     transform: translate(-50%, 0); }
 
 .charity {
-  padding: 45px 35px;
-  text-align: center; }
+  padding: 55px 35px;
+  text-align: center;
+  font-size: 14px; }
   @media (min-width: 1024px) {
     .charity {
-      margin-top: 60px;
+      margin-top: 70px;
       padding: 0; } }
 
 .charity__text {
