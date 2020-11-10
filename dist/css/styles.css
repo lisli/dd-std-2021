@@ -60,7 +60,8 @@ body {
   font-size: 24px;
   text-transform: uppercase;
   line-height: 1.1;
-  color: #550313; }
+  color: #550313;
+  padding-left: 8px; }
   @media (min-width: 1024px) {
     .header--small {
       padding: 40px 0 0 8px; } }
@@ -106,7 +107,7 @@ body {
 .info {
   border-top: 2px solid #edc9cf;
   border-bottom: 2px solid #edc9cf;
-  font-size: 20px; }
+  font-size: 24px; }
   @media (min-width: 1024px) {
     .info {
       display: flex;

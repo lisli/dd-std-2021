@@ -102,6 +102,7 @@ body {
     text-transform: uppercase;
     line-height: 1.1;
     color: $redDark;
+    padding-left: 8px;
 
     @media (min-width: $smallDesktop) {
         padding: 40px 0 0 8px;
@@ -162,7 +163,7 @@ body {
 .info {
     border-top: 2px solid $redLight;
     border-bottom: 2px solid $redLight;
-    font-size: 20px;
+    font-size: 24px;
 
     @media (min-width: $smallDesktop) {
         display: flex;
