@@ -36,12 +36,22 @@ body {
     padding: 0;
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 1500px;
+    background-size: cover;
+
+    @media (min-width: $largeMobile) {    
+        background-size: 100% 2100px;
+    }
+
+    @media (min-width: $tablet) {
+        background-size: 100% 2300px;
+    }
+    
 
     @media (min-width: $smallDesktop) {
         background-image: url('../images/horse-background-desktop.png');
         max-width: 740px;
         margin: 0 auto;
+        background-size: 1500px;
     }
 }
 
@@ -55,10 +65,10 @@ body {
     -webkit-box-shadow: 2px 0px 14px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 0px 14px 1px rgba(0,0,0,0.75); 
 
-    @media (min-width: $smallDesktop) {
+    // @media (min-width: $smallDesktop) {
         position: relative;
         margin: 0 15px;
-    }
+    // }
 
     &:before {
         @media (min-width: $smallDesktop) {
@@ -74,13 +84,16 @@ body {
 
 .header {
     margin-bottom: 20px;
+    @media (min-width: $smallDesktop) {
+        margin-bottom: 0;
+    }
 }
 
 .header__text {
     @media (min-width: $smallDesktop) {
         width: 51%;
         float: left;
-        margin-left: 20px;
+        margin: 32px 0 0 20px;
     }
 }
 
@@ -91,7 +104,7 @@ body {
     color: $redDark;
 
     @media (min-width: $smallDesktop) {
-        padding-top: 40px;
+        padding: 40px 0 0 8px;
         
     }
 }
@@ -110,13 +123,13 @@ body {
   
 .header__date {
     font-family: $kari !important;
-    background-color: $red;
+    // background-color: $red;
     color: white;
     width: 50%;
     margin: 0 auto 40px;
     line-height: .7;
     font-size: 5.5em;
-    padding: 15px;
+    // padding: 15px;
     max-width: 180px;
 
     @media (min-width: $smallDesktop) {
@@ -138,6 +151,7 @@ body {
 
 
 .main {
+    padding-bottom: 15px;
     @media (min-width: $smallDesktop) {
         display: flex;
         clear: left;
@@ -301,18 +315,17 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    padding: 15px 0;
-    margin: 0 -20px;
     letter-spacing: 1px;
-    position: relative;
+    width: 80%;
+    margin: 0;
+    padding: 15px 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 100%;
 
     @media (min-width: $smallDesktop) {
-        margin: 0;
-        padding: 15px 30px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        top: 97%;
+        width: auto;
     }
 
     &:after {
@@ -328,11 +341,12 @@ body {
 }
 
 .charity {
-    padding: 0 35px;
+    padding: 45px 35px;
     text-align: center;    
 
     @media (min-width: $smallDesktop) {
-        margin-top: 45px;
+        margin-top: 60px;
+        padding: 0;
     }
 }
 

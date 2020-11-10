@@ -12,12 +12,19 @@ body {
   padding: 0;
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 1500px; }
+  background-size: cover; }
+  @media (min-width: 600px) {
+    body {
+      background-size: 100% 2100px; } }
+  @media (min-width: 768px) {
+    body {
+      background-size: 100% 2300px; } }
   @media (min-width: 1024px) {
     body {
       background-image: url("../images/horse-background-desktop.png");
       max-width: 740px;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      background-size: 1500px; } }
 
 .container {
   margin: 0 30px;
@@ -25,11 +32,9 @@ body {
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 2px 0px 14px 1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 0px 14px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 0px 14px 1px rgba(0, 0, 0, 0.75); }
-  @media (min-width: 1024px) {
-    .container {
-      position: relative;
-      margin: 0 15px; } }
+  -moz-box-shadow: 2px 0px 14px 1px rgba(0, 0, 0, 0.75);
+  position: relative;
+  margin: 0 15px; }
   @media (min-width: 1024px) {
     .container:before {
       content: '';
@@ -41,12 +46,15 @@ body {
 
 .header {
   margin-bottom: 20px; }
+  @media (min-width: 1024px) {
+    .header {
+      margin-bottom: 0; } }
 
 @media (min-width: 1024px) {
   .header__text {
     width: 51%;
     float: left;
-    margin-left: 20px; } }
+    margin: 32px 0 0 20px; } }
 
 .header--small {
   font-size: 24px;
@@ -55,7 +63,7 @@ body {
   color: #550313; }
   @media (min-width: 1024px) {
     .header--small {
-      padding-top: 40px; } }
+      padding: 40px 0 0 8px; } }
 
 .header--large {
   color: #c30c30;
@@ -69,13 +77,11 @@ body {
 
 .header__date {
   font-family: kari-display-pro, sans-serif !important;
-  background-color: #c30c30;
   color: white;
   width: 50%;
   margin: 0 auto 40px;
   line-height: .7;
   font-size: 5.5em;
-  padding: 15px;
   max-width: 180px; }
   @media (min-width: 1024px) {
     .header__date {
@@ -89,11 +95,13 @@ body {
 .header__image {
   width: 100%; }
 
-@media (min-width: 1024px) {
-  .main {
-    display: flex;
-    clear: left;
-    padding-bottom: 45px; } }
+.main {
+  padding-bottom: 15px; }
+  @media (min-width: 1024px) {
+    .main {
+      display: flex;
+      clear: left;
+      padding-bottom: 45px; } }
 
 .info {
   border-top: 2px solid #edc9cf;
@@ -215,18 +223,17 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  padding: 15px 0;
-  margin: 0 -20px;
   letter-spacing: 1px;
-  position: relative; }
+  width: 80%;
+  margin: 0;
+  padding: 15px 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 100%; }
   @media (min-width: 1024px) {
     .charity__header {
-      margin: 0;
-      padding: 15px 30px;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, 0);
-      top: 97%; } }
+      width: auto; } }
   .charity__header:after {
     content: '';
     width: 80px;
@@ -238,11 +245,12 @@ body {
     transform: translate(-50%, 0); }
 
 .charity {
-  padding: 0 35px;
+  padding: 45px 35px;
   text-align: center; }
   @media (min-width: 1024px) {
     .charity {
-      margin-top: 45px; } }
+      margin-top: 60px;
+      padding: 0; } }
 
 .charity__text {
   font-size: 16px;
