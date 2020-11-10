@@ -258,7 +258,7 @@ body {
   @media (min-width: 1024px) {
     .charity {
       margin-top: 70px;
-      padding: 0; } }
+      padding: 0 35px; } }
 
 .charity__text {
   font-size: 16px;
