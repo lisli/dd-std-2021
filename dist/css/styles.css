@@ -61,10 +61,12 @@ body {
   text-transform: uppercase;
   line-height: 1.1;
   color: #550313;
-  padding-left: 8px; }
+  padding-left: 8px;
+  width: 310px; }
   @media (min-width: 1024px) {
     .header--small {
-      padding: 40px 0 0 8px; } }
+      padding: 25px 0 15px 8px;
+      width: 220px; } }
 
 .header--large {
   color: #c30c30;
@@ -80,7 +82,7 @@ body {
   font-family: kari-display-pro, sans-serif !important;
   color: white;
   width: 50%;
-  margin: 0 auto 40px;
+  margin: 0 auto 15px;
   line-height: .7;
   font-size: 5.5em;
   max-width: 180px; }
@@ -225,7 +227,7 @@ body {
   text-align: center;
   font-weight: bold;
   letter-spacing: 1px;
-  width: 80%;
+  width: 63%;
   margin: 0;
   padding: 15px 30px;
   position: absolute;

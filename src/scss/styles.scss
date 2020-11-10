@@ -103,10 +103,11 @@ body {
     line-height: 1.1;
     color: $redDark;
     padding-left: 8px;
+    width: 310px;
 
     @media (min-width: $smallDesktop) {
-        padding: 40px 0 0 8px;
-        
+        padding: 25px 0 15px 8px;
+        width: 220px;
     }
 }
 
@@ -124,13 +125,11 @@ body {
   
 .header__date {
     font-family: $kari !important;
-    // background-color: $red;
     color: white;
     width: 50%;
-    margin: 0 auto 40px;
+    margin: 0 auto 15px;
     line-height: .7;
     font-size: 5.5em;
-    // padding: 15px;
     max-width: 180px;
 
     @media (min-width: $smallDesktop) {
@@ -317,7 +316,7 @@ body {
     text-align: center;
     font-weight: bold;
     letter-spacing: 1px;
-    width: 80%;
+    width: 63%;
     margin: 0;
     padding: 15px 30px;
     position: absolute;
