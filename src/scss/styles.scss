@@ -86,10 +86,14 @@ body {
 }
 
 .header__text {
+    @media (min-width: $tablet) {
+        text-align: center;
+    }
     @media (min-width: $smallDesktop) {
         width: 51%;
         float: left;
         margin: 32px 0 0 20px;
+        text-align: left;
     }
 }
 
@@ -101,9 +105,14 @@ body {
     padding-left: 8px;
     width: 310px;
 
+    @media (min-width: $tablet) {
+        margin: 0 auto;
+    }
+
     @media (min-width: $smallDesktop) {
         padding: 25px 0 15px 8px;
         width: 220px;
+        margin: 0;
     }
 }
 
@@ -296,7 +305,7 @@ body {
     text-align: center;
     font-weight: bold;
     letter-spacing: 2px;
-    width: 77%;
+    white-space: nowrap;
     margin: 0;
     padding: 15px 30px;
     position: absolute;
@@ -375,4 +384,19 @@ body {
         margin-bottom: 20px;
         font-size: 40px;
     }
+}
+
+.btn {
+    background: $red;
+    color: white;
+    text-decoration: none;
+    font-family: $oskar;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    margin: 15px 0 30px;
+    display: inline-block;
 }

@@ -50,11 +50,16 @@ body {
     .header {
       margin-bottom: 0; } }
 
+@media (min-width: 768px) {
+  .header__text {
+    text-align: center; } }
+
 @media (min-width: 1024px) {
   .header__text {
     width: 51%;
     float: left;
-    margin: 32px 0 0 20px; } }
+    margin: 32px 0 0 20px;
+    text-align: left; } }
 
 .header--small {
   font-size: 24px;
@@ -63,10 +68,14 @@ body {
   color: #550313;
   padding-left: 8px;
   width: 310px; }
+  @media (min-width: 768px) {
+    .header--small {
+      margin: 0 auto; } }
   @media (min-width: 1024px) {
     .header--small {
       padding: 25px 0 15px 8px;
-      width: 220px; } }
+      width: 220px;
+      margin: 0; } }
 
 .header--large {
   color: #c30c30;
@@ -228,7 +237,7 @@ body {
   text-align: center;
   font-weight: bold;
   letter-spacing: 2px;
-  width: 77%;
+  white-space: nowrap;
   margin: 0;
   padding: 15px 30px;
   position: absolute;
@@ -294,3 +303,17 @@ body {
     .charity__text--lg {
       margin-bottom: 20px;
       font-size: 40px; } }
+
+.btn {
+  background: #c30c30;
+  color: white;
+  text-decoration: none;
+  font-family: oskar, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 15px 30px;
+  margin: 15px 0 30px;
+  display: inline-block; }
